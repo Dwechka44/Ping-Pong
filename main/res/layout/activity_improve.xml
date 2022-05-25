@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/zolot">
+
+    <ImageView
+        android:id="@+id/derevo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/derevo" />
+
+    <ImageView
+        android:id="@+id/zhelezo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/derevo"
+        app:srcCompat="@drawable/zhelezo" />
+
+    <ImageView
+        android:id="@+id/almaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zhelezo"
+        app:srcCompat="@drawable/almaz" />
+
+    <TextView
+        android:id="@+id/derev"
+        android:layout_width="179dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/shrift"
+        android:text="Цена меча - 200 монет. Улучшение дает + 10к урону"
+        android:textColor="#150101"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/zhelez"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/derevo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/zhelez"
+        android:layout_width="177dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/shrift"
+        android:text="Цена меча - 500 монет. Улучшение дает + 25к урону."
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/alma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/zhelezo"
+        app:layout_constraintTop_toBottomOf="@+id/derev" />
+
+    <TextView
+        android:id="@+id/alma"
+        android:layout_width="181dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="237dp"
+        android:fontFamily="@font/shrift"
+        android:text="Цена меча - 1000  монет. Улучшение дает + 50к урону."
+        android:textColor="#008FFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/almaz"
+        app:layout_constraintTop_toBottomOf="@+id/zhelez" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="382dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="97dp"
+        android:fontFamily="@font/shrift"
+        android:text="Нажми на меч , чтобы улучшить."
+        android:textColor="#A6FF00"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/almaz" />
+</androidx.constraintlayout.widget.ConstraintLayout>
